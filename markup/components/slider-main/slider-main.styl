@@ -23,6 +23,10 @@
     position absolute
     top 0
     left 0
+    opacity 1
+    transition 0.2s linear
+    .loading &
+      opacity 0
 
   &__item-text
     overflow hidden
@@ -36,10 +40,6 @@
     padding-bottom 5px
     padding-left 2px
     margin-bottom 20px
-    opacity 1
-    transition 0.2s linear
-    .loading &
-      opacity 0
 
   &__btn
     color white
