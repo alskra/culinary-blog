@@ -1,0 +1,59 @@
+include ../components/doctype/doctype
+include ../components/header/header
+include ../components/content/content
+include ../components/footer/footer
+
+include ../components/form-subscribe/form-subscribe
+include ../components/pagination/pagination
+
++doctype(pages.advices.title)
+  .-wrapper
+    +header(false, [pages.advices.url])
+    +content
+      .__inner
+        .container-fluid
+          .-grid._1
+            .__col._1
+              section.-section._1
+                header.__header
+                  h2.__title Полезные советы
+                  .__header-bottom
+                    span.__header-line._no-padding
+
+                .-articles-list-2
+                  article.-article-item-2
+                    +a().__img
+                      img.__img-inner(src='static/img/content/advices/370x225/okroshka.jpg'
+                      srcset='static/img/content/advices/370x225/okroshka.jpg 1x, static/img/content/advices/740x450/okroshka.jpg 1.25x'
+                      alt='' title='')
+                    .overflow-hidden
+                      +time().-article-item-2.__date 01.06.2017
+                      h3.-article-item-2.__title: +a().__title-link Окрошка
+                      .-article-item-2.__content
+                        p.
+                          Впереди жаркое лето, а это значит, что теперь даже во время обеда захочется не только подкрепиться,
+                          но и одновременно освежиться. И здесь как нельзя кстати вспоминается окрошка — суп, который подается холодным.
+                          Но особенно интересно то, что у каждой хозяйки рецепт окрошки свой. И это не удивительно,
+                          ведь даже на Руси не было одного рецепта, хозяйки добавляли в блюдо как квас, так и кисломолочную заправку и даже рассол!
+
+                  article.-article-item-2
+                    +a().__img
+                      img.__img-inner(src='static/img/content/advices/370x225/Космополитен1(1).jpg'
+                      srcset='static/img/content/advices/370x225/Космополитен1(1).jpg 1x, static/img/content/advices/740x450/Космополитен1(1).jpg 1.25x'
+                      alt='' title='')
+                    .overflow-hidden
+                      +time().-article-item-2.__date 01.06.2017
+                      h3.-article-item-2.__title: +a().__title-link Коктейль «Маргарита»
+                      .-article-item-2.__content
+                        p.
+                          Пожалуй, это один из самых известных коктейлей, который несомненно ассоциируется с роскошными
+                          аристократическими вечеринками или посиделками с подругами за интересными беседами в самых модных барах.
+                          Появился коктейль в латинской Америке в первой половине 20 века, несмотря на огромное количество версией
+                          его происхождения, но одно в них остается неизменным — образ Маргариты.
+
+            .__col._2
+              +form-subscribe()
+
+          +pagination().margin-none-top
+
+    +footer

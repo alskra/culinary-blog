@@ -1,0 +1,26 @@
+{
+  "name": "culinary-blog",
+  "description": "Онлайн Кухня",
+  "main": "index.js",
+  "authors": [
+    "alskra <krasnoyurchenko.a.s@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.*",
+    "jquery-touch-events": "*",
+    "slick-carousel": "*",
+    "perfect-scrollbar": "*",
+    "jquery-validation": "*",
+    "jquery-mask-plugin": "*",
+    "fancybox": "*"
+  }
+}

@@ -1,0 +1,89 @@
+.header
+  display table-row
+  height 0
+
+  &__inner
+    &_1
+      padding 13px 0 18px
+      background url('header-bg.jpg') no-repeat 50% 100%/cover
+
+    &_2
+      border-top 1px solid gainsboro
+      border-bottom 1px solid gainsboro
+
+  &__logo
+    display table
+    color $green-1
+    text-decoration none
+    font-family nautilus, sans-serif
+    font-size 39px
+    line-height 1em
+    text-align center
+    white-space nowrap
+    margin 0 auto
+    &:hover, &:focus
+      color $green-1
+      text-decoration none
+
+  &__logo-img
+    display block
+    width 142px
+    margin 0 auto -15px
+
+  &__nav
+    text-align center
+    font-size rem-calc(12)
+    font-weight 700
+    text-transform uppercase
+
+  &__nav-item
+    display inline-block
+    vertical-align top
+    color inherit
+    text-decoration none
+    padding 16px 12px 13px
+    &:hover, &:focus, &_current
+      color $link-color
+      text-decoration none
+
+  &__search
+    overflow hidden
+    font-family 'zero-width'
+    text-align right
+    margin 7px 0
+
+  &__search-inner
+    display inline-block
+    vertical-align top
+    overflow hidden
+    width 0
+    height 33px
+    transition 0.2s linear
+    &_opened
+      width 200px
+
+  input&__search-field
+    display block
+    box-sizing border-box
+    font 14px/31px $font-family-base
+    width 100%
+    height 33px
+    padding 0 10px
+    background-color white
+    border 1px solid #e8e8e8
+    transition $transition-base
+    &::placeholder
+      color #ababab
+    &:focus
+      outline 0
+      border-color $green-1
+
+  &__search-btn
+    display inline-block
+    vertical-align top
+    color rgba(black, 0.41)
+    font-size 19px
+    line-height 33px
+    width 33px
+    height 33px
+

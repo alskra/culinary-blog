@@ -1,0 +1,32 @@
+.text-field
+  display inline-block
+  vertical-align top
+  color $text-color
+  font 14px/31px $font-family-base
+  text-align left
+  height 33px
+  padding 0 10px
+  background-color white
+  border 1px solid #e8e8e8
+  transition $transition-base
+  &::placeholder
+    color #ababab
+  &,
+  &:active,
+  &.active
+    &:focus,
+    &.focus,
+    &.ik_select_link_focus
+      outline 0
+      border-color $green-1
+  &:active,
+  &.active
+    outline 0
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] &
+    disabled()
+
+  &_width_100
+    display block
+    width 100%

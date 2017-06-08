@@ -1,0 +1,28 @@
+mixin header(isSignIn, urls)
+  // Header
+  header.-header&attributes(attributes)
+    .__inner._1
+      .container-fluid
+        +a('/')(title=pkg.description).-header.__logo
+          img.__logo-img(src='static/img/general/header-logo.png' alt=pkg.description)
+          = pkg.description
+    .__inner._2
+      .container-fluid
+        .row
+          .col-xs-6.col-xs-offset-3
+            -
+              var navList = [
+                {title: pages.index.title, url: pages.index.url},
+                {title: pages.recipes.title, url: pages.recipes.url},
+                {title: pages.advices.title, url: pages.advices.url},
+                {title: pages.about.title, url: pages.about.url}
+              ];
+            nav.-header.__nav
+              each page in navList
+                +a(page.url).__nav-item(class={_current: page.url === urls[0]}) #{page.title}
+          .col-xs-3
+            form.-header.__search(action='')
+              span.__search-inner
+                input.__search-field(type='search' id='search' placeholder='Поиск')
+              label.__search-btn.btn.fa.fa-search(for='search')
+  // /Header

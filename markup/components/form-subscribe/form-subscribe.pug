@@ -1,0 +1,11 @@
+mixin form-subscribe()
+  // Form-subscribe
+  form.-form-subscribe(action='')&attributes(attributes)
+    h3.__title Подписаться #[small на новые рецепты]
+    .form-row
+      input.-form-subscribe.__field.text-field.text-field_width_100(type='email' placeholder='Ваш e-mail*')
+    .form-row
+      input.-form-subscribe.__field.text-field.text-field_width_100(type='text' placeholder='Ваше имя')
+    .form-row.text-center
+      button.-form-subscribe.__btn.btn.btn_1(type='submit') Подписаться
+  // /Form-subscribe

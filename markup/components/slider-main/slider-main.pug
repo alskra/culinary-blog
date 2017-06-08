@@ -1,0 +1,25 @@
+mixin slider-main()
+  // Slider-main
+  .-slider-main.slick-slider&attributes(attributes)
+    .__item.slick-slide.loading.loading_before
+      img.__item-img(data-lazy='static/img/content/slider-main/1170x450/slide-1.jpg' data-lazy-srcset=
+      'static/img/content/slider-main/1170x450/slide-1.jpg 1170w, ' +
+      'static/img/content/slider-main/2340x900/slide-1.jpg 2340w'
+      sizes='1170px'
+      alt='' data-object-fit='cover' onload='objectFit(this)')
+      .__item-content
+        .__item-text.
+          Секреты приготовления супа из чечевицы
+        +a().__btn.btn Узнать больше#[span.btn__icon.fa.fa-angle-right]
+
+    .__item.slick-slide.loading.loading_before
+      img.__item-img(data-lazy='static/img/content/slider-main/1170x450/slide-2.jpg' data-lazy-srcset=
+      'static/img/content/slider-main/1170x450/slide-2.jpg 1170w, ' +
+      'static/img/content/slider-main/2340x900/slide-2.jpg 2340w'
+      sizes='1170px'
+      alt='' data-object-fit='cover' onload='objectFit(this)')
+      .__item-content
+        .__item-text.
+          Картофель по рецепту А.С.Пушкина
+        +a().__btn.btn Узнать больше#[span.btn__icon.fa.fa-angle-right]
+  // /Slider-main

@@ -1,0 +1,124 @@
+include ../components/doctype/doctype
+include ../components/header/header
+include ../components/content/content
+include ../components/footer/footer
+
+include ../components/form-subscribe/form-subscribe
+include ../components/pagination/pagination
+
++doctype(pages.recipes.title)
+  .-wrapper
+    +header(false, [pages.recipes.url])
+    +content
+      .__inner
+        .container-fluid
+          section.-section._1
+            header.__header
+              .-menu-category
+                +a().__item._current
+                  span.__icon.glyphicon.glyphicon-roast-chicken
+                  | Основные блюда
+                +a().__item
+                  span.__icon.glyphicon.glyphicon-bowl-of-food
+                  | Салаты
+                +a().__item
+                  span.__icon.glyphicon.glyphicon-hot-soup
+                  | Супы
+                +a().__item
+                  span.__icon.glyphicon.glyphicon-sausage-and-fork
+                  | Закуски
+                +a().__item
+                  span.__icon.glyphicon.glyphicon-cocktail-glass
+                  | Напитки
+
+              .__header-bottom
+                span.__header-line
+                span.__header-category Основные блюда
+
+            .-articles-list
+              article.-article-item
+                +a(pages.kartofel_po_retseptu_a_s_pushkina.url).__img
+                  img.__img-inner(src='static/img/content/recipes/370x260/maxresdefault.jpg'
+                  srcset='static/img/content/recipes/370x260/maxresdefault.jpg 1x, static/img/content/recipes/740x520/maxresdefault.jpg 1.25x'
+                  alt='' title='')
+                +time().__date 01.06.2017
+                h3.__title: +a(pages.kartofel_po_retseptu_a_s_pushkina.url).__title-link=pages.kartofel_po_retseptu_a_s_pushkina.title
+                .__content
+                  p.
+                    Наверняка вы и не догадываетесь, что Александр Пушкин известен не только своими великими произведениями,
+                    но и собственным рецептом блюда, которое вы, без сомнения, пробовали. В среде поваров существует даже история об этом.
+                    Однажды поэт загостился в доме у Вульфов и вернулся в свое имение «Михайловское» поздней ночью.
+                    Проголодавшись после долгой дороги, поэт решил не беспокоить своих домашних, а приготовить ужин самостоятельно.
+
+              article.-article-item
+                +a(pages.kuritsa_po_gruzinski.url).__img
+                  img.__img-inner(src='static/img/content/recipes/370x260/maxresdefault-(1).jpg'
+                  srcset='static/img/content/recipes/370x260/maxresdefault-(1).jpg 1x, static/img/content/recipes/740x520/maxresdefault-(1).jpg 1.25x'
+                  alt='' title='')
+                +time().__date 01.06.2017
+                h3.__title: +a(pages.kuritsa_po_gruzinski.url).__title-link=pages.kuritsa_po_gruzinski.title
+                .__content
+                  p.
+                    Пробовали ли вы мясо курицы в ягодном соусе?
+                    А, между прочим, курица в ежевичном соусе — это традиционно блюдо грузинской кухни.
+                    Говорят, если хозяйка желает поразить гостей, то она должна приготовить курицу с ежевикой.
+                    Хотя это блюдо и принято подавать холодным, без гарнира, каждый знает, что на грузинском столе закуски есть всегда —
+                    это лаваш, овощи, зелень, домашний сыр. Некоторые гурманы подают курицу с нарезанными тонкими ломтиками папайю или теплый рис.
+
+              article.-article-item
+                +a(pages.indiyskiy_syir.url).__img
+                  img.__img-inner(src='static/img/content/recipes/370x260/Панир.jpg'
+                  srcset='static/img/content/recipes/370x260/Панир.jpg 1x, static/img/content/recipes/740x520/Панир.jpg 1.25x'
+                  alt='' title='')
+                +time().__date 01.06.2017
+                h3.__title: +a(pages.indiyskiy_syir.url).__title-link=pages.indiyskiy_syir.title
+                .__content
+                  p.
+                    Чарующая и удивительная Индия... Огромная страна, вмещающая в себе множество традиций, культур и народностей.
+                    Все это разнообразие, конечно, повлияло и на кухню страны. Считается, что единой традиционной индийской кухни нет,
+                    потому что в каждом штате она разная.
+
+              article.-article-item
+                +a(pages.vegetarianskiy_sup_iz_chechevitsyi.url).__img
+                  img.__img-inner(src='static/img/content/recipes/370x260/7_Fakes.jpg'
+                  srcset='static/img/content/recipes/370x260/7_Fakes.jpg 1x, static/img/content/recipes/740x520/7_Fakes.jpg 1.25x'
+                  alt='' title='')
+                +time().__date 01.06.2017
+                h3.__title: +a(pages.vegetarianskiy_sup_iz_chechevitsyi.url).__title-link=pages.vegetarianskiy_sup_iz_chechevitsyi.title
+                .__content
+                  p.
+                    Вегетарианство постепенно перестает казаться чем-то диким, а разговоров о том,
+                    что мясо — это ценный белок, от которого невозможно отказаться, становится все меньше.
+                    Удивительно, но факт, что супы получаются вкусными, даже если их не делать на мясном бульоне.
+
+
+
+            +pagination().margin-none-bottom
+
+          .-grid._1
+            .__col._1
+              section.-section._1
+                header.__header
+                  h2.__title Рецепт дня
+                  .__header-bottom
+                    span.__header-line._no-padding
+
+                .-articles-list-2
+                  article.-article-item-2
+                    +a().__img
+                      img.__img-inner(src='static/img/content/advices/370x225/okroshka.jpg'
+                      srcset='static/img/content/advices/370x225/okroshka.jpg 1x, static/img/content/advices/740x450/okroshka.jpg 1.25x'
+                      alt='' title='')
+                    .overflow-hidden
+                      +time().-article-item-2.__date 01.06.2017
+                      h3.-article-item-2.__title: +a().__title-link Окрошка
+                      .-article-item-2.__content
+                        p.
+                          Впереди жаркое лето, а это значит, что теперь даже во время обеда захочется не только подкрепиться,
+                          но и одновременно освежиться. И здесь как нельзя кстати вспоминается окрошка — суп, который подается холодным.
+                          Но особенно интересно то, что у каждой хозяйки рецепт окрошки свой. И это не удивительно,
+                          ведь даже на Руси не было одного рецепта, хозяйки добавляли в блюдо как квас, так и кисломолочную заправку и даже рассол!
+
+            .__col._2
+              +form-subscribe()
+    +footer

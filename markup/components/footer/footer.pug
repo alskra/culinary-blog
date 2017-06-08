@@ -1,0 +1,31 @@
+include ../social-networks/social-networks
+
+mixin footer()
+  // Footer
+  footer.-footer&attributes(attributes)
+    .__inner._1
+      .container-fluid
+        .row
+          .col-xs-4
+            +a('/')(title=pkg.description).-footer.__logo
+              img.__logo-img(src='static/img/general/footer-logo.png' alt=pkg.description)
+              = pkg.description
+          .col-xs-4
+            +social-networks()
+          .col-xs-4
+            -
+              var navFootList = [
+                {title: pages.recipes.title, url: pages.recipes.url},
+                {title: pages.advices.title, url: pages.advices.url},
+                {title: pages.about.title, url: pages.about.url}
+              ];
+            nav.-footer.__nav
+              each page in navFootList
+                +a(page.url).__nav-item #{page.title}
+    .__inner._2
+      .container-fluid
+        p.
+          Copyright &copy;&nbsp;2017 Онлайн кухня.<br>
+          При копировании материалов с сайта обратная активная ссылка обязательна.<br>
+          #[+a()(data-fancybox='privacy-policy' data-type='ajax' data-src='popups/privacy-policy.html' data-selector='.modal') Политика конфиденциальности]
+  // /Footer

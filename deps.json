@@ -1,0 +1,26 @@
+{
+  "css_src": [
+    "app_components/bootstrap/css/index.styl",
+    "markup/static/fonts/zero-width/zero-width.css",
+    "markup/static/fonts/raleway/raleway.css",
+    "markup/static/fonts/nautilus/nautilus.css",
+    "markup/static/fonts/glyphicons/glyphicons.css",
+    "markup/static/fonts/font-awesome/font-awesome.css",
+    "app_components/img-object-fit/img-object-fit.css",
+    "bower_components/fancybox/dist/jquery.fancybox.css",
+    "bower_components/slick-carousel/slick/slick.css"
+  ],
+  "js_src": [
+    "app_components/modernizr/modernizr-custom.js",
+    "bower_components/jquery/dist/jquery.js",
+    "bower_components/jquery-touch-events/src/jquery.mobile-events.js",
+    "bower_components/fancybox/dist/jquery.fancybox.js",
+    "app_components/slick-carousel/add-on/slick.js"
+  ],
+  "fonts_src": [
+    "markup/static/fonts/zero-width",
+    "markup/static/fonts/raleway",
+    "markup/static/fonts/nautilus",
+    "markup/static/fonts/font-awesome"
+  ]
+}
